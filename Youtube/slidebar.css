@@ -1,0 +1,81 @@
+.sidebar{
+  position: fixed;
+  left: 0px;
+  top: 55px;
+  bottom: 0;
+  width: 78px;
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-link{
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1px;
+  flex-direction: column;
+
+}
+
+.sidebar-link:hover{
+  background-color: rgb(234, 230, 230);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.sidebar-link div{
+  font-size: 9px;
+}
+
+/* Media Query for mobile phones */
+@media(max-width:768px){
+  .button-name{
+    display: none;
+  }
+  .sidebar{
+    background-color: rgb(206, 206, 206);
+    position: fixed;
+    top: 92%;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+
+  }
+
+
+  .sidebar-link{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-link:hover{
+    background-color: rgb(234, 230, 230);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .sidebar-link img {
+    height: 22px;
+    width: 22px;
+    margin-right: 2px;
+
+    align-items: center;
+  }
+}
+
